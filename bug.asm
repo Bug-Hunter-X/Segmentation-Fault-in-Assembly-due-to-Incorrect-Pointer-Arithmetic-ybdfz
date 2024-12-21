@@ -1,0 +1,3 @@
+mov eax, [ebx + ecx*4 + 0x10]
+
+This line of assembly code attempts to access memory at an address calculated as follows: the value of ebx plus the value of ecx multiplied by 4, plus 0x10 (16 in decimal).  The error arises when either ebx, ecx, or the result of the calculation exceeds the bounds of allocated memory or points to an invalid memory region.  This results in a segmentation fault or access violation.
